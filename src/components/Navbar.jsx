@@ -21,9 +21,9 @@ const Navbar = () => {
 					}}
 				>
 					<img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-					<p className="text-white text-[20px] font-semibold cursor-pointer font-heading ">
-						Iqman Singh
-						<span className="sm:block hidden font-heading">Bhatia</span>
+					<p className="text-white text-[20px] font-semibold cursor-pointer font-heading flex">
+						Iqman Singh&nbsp;
+						<span className="md:block hidden font-heading ">Bhatia</span>
 					</p>
 				</Link>
 				<ul className="list-none hidden sm:flex flex-row gap-10">
