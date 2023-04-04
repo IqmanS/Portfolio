@@ -5,16 +5,24 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 const Computers = () => {
-	const drone = useGLTF("./hologram_console/scene.gltf");
+	const comp = useGLTF("./tv.glb");
 	return (
 		<mesh>
-			<hemisphereLight intensity={0.25} groundColor="black" />
-			<pointLight intensity={0.8} />
+			<hemisphereLight intensity={0.45} groundColor="black" />
+			<pointLight intensity={0.5} />
+			<spotLight
+				position={[-20, 50, 10]}
+				angle={0.12}
+				penumbra={1}
+				intensity={1}
+				castShadow
+				shadow-mapSize={1024}
+			/>
 			<primitive
-				object={drone.scene}
-				scale={0.7}
-				position={[0, -3.25, -1.5]}
-				// rotation={[-0.01, -0.2, -0.1]}
+				object={comp.scene}
+				scale={0.75}
+				position={[0, -4.5, -1.5]}
+				rotation={[-0.0, -0.2, -0.05]}
 			/>
 		</mesh>
 	);
@@ -26,7 +34,7 @@ const ComputersCanvas = () => {
 			frameloop="demand"
 			shadows
 			camera={{ position: [20, 3, 5], fov: 35 }}
-			gl={{ preserveDrawingBuffer: true }}
+			gl={{ preserveDrawingBuffer: false }}
 		>
 			<Suspense fallback={<CanvasLoader />}>
 				<OrbitControls
