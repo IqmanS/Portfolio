@@ -284,13 +284,13 @@
 @layer base{
   @font-face {
     font-family: 'Valorax';
-    src: url('src/assets/fonts/Valorax-lg25V.otf') format('opentype');
+    src: url('./assets/fonts/Valorax-lg25V.otf') format('opentype');
   }
 }
 
 @layer base{
   @font-face {
     font-family: 'Neptune';
-    src: url('src/assets/fonts/Neptune.otf') format('opentype');
+    src: url('./assets/fonts/Neptune.otf') format('opentype');
   }
 }
