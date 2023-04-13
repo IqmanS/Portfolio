@@ -42,20 +42,32 @@ export const navLinks = [
 
 const services = [
 	{
-		title: "Web Developer",
-		icon: web,
+		title: "LinkedIn",
+		link: "https://www.linkedin.com/in/iqman-singh-bhatia-8b7642222/",
 	},
 	{
-		title: "React Native Developer",
-		icon: mobile,
+		title: "GitHub",
+		link: "https://github.com/IqmanS",
 	},
 	{
-		title: "Backend Developer",
-		icon: backend,
+		title: "Kaggle",
+		link: "https://www.kaggle.com/iqmansingh",
 	},
 	{
-		title: "Content Creator",
-		icon: creator,
+		title: "LEETCODE",
+		link: "https://leetcode.com/ibhatia_be21/",
+	},
+	{
+		title: "Hackerrank",
+		link: "https://www.hackerrank.com/Iqman_Singh",
+	},
+	{
+		title: "Medium",
+		link: "https://medium.com/@ibhatia_be21",
+	},
+	{
+		title: "Gmail",
+		link: "mailto:ibhatia_be21@thapar.edu",
 	},
 ];
 
@@ -116,56 +128,32 @@ const technologies = [
 
 const experiences = [
 	{
-		title: "React.js Developer",
-		company_name: "Starbucks",
-		icon: starbucks,
+		title: "CBSE Non - Medical 10+2",
+		company_name: "GHPS Vasant Vihar",
+		icon: "https://www.schoolmykids.com/smk-media/2018/10/Guru-Harkrishan-Public-School-Vasant-Vihar-Delhi.png",
 		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
+		date: "March 2008 - April 2021",
+		points: ["Percentage: 94%"],
+		// points: [
+		// 	"Developing and maintaining web applications using React.js and other related technologies.",
+		// 	"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+		// 	"Implementing responsive design and ensuring cross-browser compatibility.",
+		// 	"Participating in code reviews and providing constructive feedback to other developers.",
+		// ],
 	},
 	{
-		title: "React Native Developer",
-		company_name: "Tesla",
-		icon: tesla,
+		title: "B.E. Computer Engineering",
+		company_name: "Thapar Institute of Engineering & Technology",
+		icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyFh1jLt9uOwEWlVoGF2ZesD1CqBVwPLLT8FeDfGU&s",
 		iconBg: "#E6DEDD",
-		date: "Jan 2021 - Feb 2022",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "Web Developer",
-		company_name: "Shopify",
-		icon: shopify,
-		iconBg: "#383E56",
-		date: "Jan 2022 - Jan 2023",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "Full stack Developer",
-		company_name: "Meta",
-		icon: meta,
-		iconBg: "#E6DEDD",
-		date: "Jan 2023 - Present",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
+		date: "August 2021 - Present",
+		points: ["CGPA: 9.22/10"],
+		// points: [
+		// 	"Developing and maintaining web applications using React.js and other related technologies.",
+		// 	"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+		// 	"Implementing responsive design and ensuring cross-browser compatibility.",
+		// 	"Participating in code reviews and providing constructive feedback to other developers.",
+		// ],
 	},
 ];
 
@@ -198,67 +186,115 @@ const testimonials = [
 
 const projects = [
 	{
-		name: "Car Rent",
+		name: "Lemur - Battleship Game AI",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			"The Lemur AI project involves designing and implementing an artificial intelligence system for playing the classic board game Battleship. The AI system is designed to play against human opponents, providing a challenging gameplay experience.",
 		tags: [
 			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "mongodb",
+				name: "Artificial Intelligence",
 				color: "green-text-gradient",
 			},
 			{
-				name: "tailwind",
-				color: "pink-text-gradient",
+				name: "PyGame",
+				color: "peach-text-gradient",
 			},
 		],
-		image: carrent,
-		source_code_link: "https://github.com/",
+		image:
+			"https://raw.githubusercontent.com/IqmanS/lemur-battleship-ai/master/BattleshipLogo.png",
+		source:
+			"https://static-00.iconduck.com/assets.00/itch-io-icon-512x512-wwio9bi8.png",
+		link2: true,
+		source_code_link_2: "https://iqman-s.itch.io/battleship-ai",
+		source_code_link: "https://github.com/IqmanS/lemur-battleship-ai",
 	},
 	{
-		name: "Job IT",
+		name: "Titanic Dataset",
 		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+			"This is the legendary Titanic Machine Learning problem. The objective is to use machine learning to create a model that predicts which passengers survived the Titanic shipwreck.",
 		tags: [
 			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "restapi",
-				color: "green-text-gradient",
-			},
-			{
-				name: "scss",
+				name: "Machine Learning",
 				color: "pink-text-gradient",
 			},
+			{
+				name: "Kaggle",
+				color: "blue-text-gradient",
+			},
 		],
-		image: jobit,
-		source_code_link: "https://github.com/",
+		image:
+			"https://raw.githubusercontent.com/IqmanS/ai_ml/main/titanic_dataset/titanic.jpg",
+		source_code_link:
+			"https://github.com/IqmanS/ai_ml/tree/main/titanic_dataset",
+		link2: true,
+		source:
+			"https://storage.scolary.com/storage/file/public/71b68248-ba0a-4b26-b15f-0c77cdf341cd.svg",
+		source_code_link_2: "https://www.kaggle.com/code/iqmansingh/titanic",
 	},
 	{
-		name: "Trip Guide",
+		name: "Spaceship Titanic Dataset",
 		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+			"The Spaceship Titanic Machine Learning Problem is the evolution of Titanic ML Problem. The objective is to use machine learning to create a model that predicts which which passengers were transported by the collision.",
 		tags: [
 			{
-				name: "nextjs",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "supabase",
-				color: "green-text-gradient",
-			},
-			{
-				name: "css",
+				name: "Machine Learning",
 				color: "pink-text-gradient",
 			},
+			{
+				name: "Kaggle",
+				color: "blue-text-gradient",
+			},
 		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
+		image:
+			"https://raw.githubusercontent.com/IqmanS/ai_ml/main/spaceship_titanic/spaceship-titanic.jpg",
+		source_code_link:
+			"https://github.com/IqmanS/ai_ml/tree/main/spaceship_titanic",
+		link2: true,
+		source:
+			"https://storage.scolary.com/storage/file/public/71b68248-ba0a-4b26-b15f-0c77cdf341cd.svg",
+		source_code_link_2:
+			"https://www.kaggle.com/code/iqmansingh/spaceship-titanic",
+	},
+	{
+		name: "Meali - Meal Catalog App",
+		description:
+			"Meali is a mobile application that allows users to browse through a wide variety of dishes and recipes, organized into categories for easy navigation. Users can filter and browse collections of recipes and get Step-by-Step Cooking Guide and Detailed Ingredients list",
+		tags: [
+			{
+				name: "Flutter",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "Firebase",
+				color: "yellow-text-gradient",
+			},
+		],
+		image:
+			"https://raw.githubusercontent.com/IqmanS/meali-meals-app/master/icon/icon.jpg",
+		source_code_link: " https://github.com/IqmanS/meali-meals-app",
+		link2: false,
+		source: "",
+		source_code_link_2: "",
+	},
+	{
+		name: "UniWalet - College Payments App",
+		description:
+			"UniWallet was developed as a team project in HackTU 4.0. It is a Payments App UI Redesign focused on Teenagers and Young Adults, it tries to make it easy to track expenditure by changing the Theme of the App based on the target balance user has for the given period.",
+		tags: [
+			{
+				name: "Flutter",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "Firebase",
+				color: "yellow-text-gradient",
+			},
+		],
+		image:
+			"https://raw.githubusercontent.com/IqmanS/UniWallet-Payments-App/master/UniWallet.png",
+		source_code_link: "https://github.com/IqmanS/UniWallet-Payments-App",
+		link2: false,
+		source: "",
+		source_code_link_2: "",
 	},
 ];
 

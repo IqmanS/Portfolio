@@ -6,18 +6,22 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({ index, title, icon }) => {
+const ServiceCard = ({ index, title, link }) => {
 	return (
-		<Tilt className="xs:w-[250px] w-full">
+		<Tilt className="xs:w-[250px] w-full cursor-pointer">
 			<motion.div
 				variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-				className="w--full green-pink-gradient p-[2px] rounded-[20px] shadow-card"
+				className="w-full peach-pink-gradient p-[2px] rounded-[20px] shadow-card"
+				onClick={() => window.open(link, "_blank")}
 			>
 				<div
 					options={{ max: 45, scale: 1, speed: 450 }}
-					className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+					className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[180px] flex justify-evenly items-center flex-col"
 				>
-					<img src={icon} alt={title} className="w-16 h-16 object-contain" />
+					{/* <img src={icon} alt={title} className="w-16 h-16 object-contain" /> */}
+					<h1 className="font-design text-[70px] text-quat">
+						{title.toLowerCase().charAt(0)}
+					</h1>
 					<h3 className="text-white text-center text-[20px] font-bold">
 						{title}
 					</h3>
@@ -32,27 +36,30 @@ const About = () => {
 		<>
 			<motion.div variants={textVariant()}>
 				<p className={styles.sectionSubText}>Introduction</p>
-				<h2 className={styles.sectionHeadText}>Overview.</h2>
+				<h2 className={styles.sectionHeadText}>
+					Overview<span className="text-quat">.</span>
+				</h2>
 				<motion.p
 					className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 					variants={fadeIn("", "", 0.1, 1)}
 				>
-					<p>
-						B.E. Computer Engineering Student at Thapar Institute of Engineering
-						& Technology (TIET), Patiala{" "}
-					</p>
-					Core Member at Google Developer Student Club TIET. I have worked on
-					several projects, including Meali - a meal catalog app, Pocket Wallet
-					- a personal expense tracker and currently working on Beaver - a chess
-					engine designed to provide a challenging and immersive experience for
-					players of all levels.
+					Core Member at Google Developer Student Club TIET.
+					<br /> Currently exploring fields of Artificial intelligence and
+					Machine Learning. I have worked on several projects, including Meali -
+					a Meal Catalog App, Lemur - BattleShip Board Game AI and currently
+					working on Beaver - a Chess Engine designed to provide a challenging
+					and immersive experience for players of all levels.
 				</motion.p>
+				<p className={styles.sectionSubText + " mt-32"}>My Relevant Profiles</p>
+				<h2 className={styles.sectionHeadText}>
+					Profiles<span className="text-quat">.</span>
+				</h2>
 				<div className="mt-20 flex flex-wrap gap-10">
 					{services.map((service, index) => (
 						<ServiceCard
 							key={service.title}
-							icon={service.icon}
 							title={service.title}
+							link={service.link}
 							index={index}
 							{...services}
 						/>

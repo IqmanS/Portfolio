@@ -13,23 +13,28 @@ const Hero = () => {
 				}
 			>
 				<div className="flex flex-col justify-center items-center mt-5">
-					<div className="w-5 h-5 rounded-full bg-[#915eff]" />
-					<div className="w-1 sm:h-80 h-40 violet-gradient" />
+					<div className="w-5 h-5 rounded-full bg-[#FF6363]" />
+					<div className="w-1 sm:h-80 h-40 peach-gradient" />
 				</div>
 				<div>
 					<h1 className={styles.heroHeadText}>
 						Hi, I'm
-						<span className="text-[#915eff] "> Iqman Singh </span>
+						<span className="text-[#FF6363] "> Iqman Singh </span>
 					</h1>
-					<p className={styles.heroSubText + " mt-2 text-white-100"}>
-						Budding Computer Engineer{" "}
+					<p
+						className={
+							styles.heroSubText +
+							" mt-2 text-white-100 flex flex-wrap w-[500px]"
+						}
+					>
+						App Dev, AI/ML Enthusiast and a Budding Software Engineer{" "}
 					</p>
 				</div>
 			</div>
 			<ComputersCanvas />
 
-			<div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-				<a href="#about">
+			<div className="absolute sm:bottom-10 bottom-12 w-full flex justify-center items-center">
+				<a href="#About">
 					<div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
 						<motion.div
 							animate={{

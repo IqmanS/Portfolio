@@ -24,12 +24,30 @@ const ProjectCard = ({ project, index }) => {
 					<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
 						<div
 							onClick={() => window.open(project.source_code_link, "_blank")}
-							className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+							className="bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
 						>
 							<img
 								src={github}
 								alt={"Link"}
-								className="w-8 h-8   object-contain"
+								className="w-9 h-9 rounded-full object-fill"
+							/>
+						</div>
+					</div>
+					<div
+						className={
+							project.link2
+								? "absolute inset-0 flex justify-end my-3 mr-[60px] card-img_hover"
+								: "hidden"
+						}
+					>
+						<div
+							onClick={() => window.open(project.source_code_link_2, "_blank")}
+							className="bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+						>
+							<img
+								src={project.source}
+								alt={"Link"}
+								className="w-8 h-8 rounded-full object-contain"
 							/>
 						</div>
 					</div>
@@ -61,13 +79,14 @@ const Works = () => {
 		<>
 			<motion.div variants={textVariant()}>
 				<p className={styles.sectionSubText}>Projects So Far</p>
-				<h2 className={styles.sectionHeadText}>Projects.</h2>
-				<div className="mt-20 flex flex-col"></div>
+				<h2 className={styles.sectionHeadText}>
+					Projects<span className="text-quat ">.</span>
+				</h2>
 			</motion.div>
 			<div className="w-full flex ">
 				<motion.p
 					variants={fadeIn("", "", 0.1, 1)}
-					className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+					className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 				>
 					Following are a few Projects that I have worked on.
 				</motion.p>

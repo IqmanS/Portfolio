@@ -5,9 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
-	const comp = useGLTF("./desktop_pc/scene.gltf");
-	const robot = useGLTF("./robot/scene.gltf");
-	const drone = useGLTF("./mech_drone/scene.gltf");
+	const astro = useGLTF("./astronaut/scene.gltf");
 	return (
 		<mesh>
 			<hemisphereLight intensity={0.9} groundColor="black" />
@@ -20,18 +18,18 @@ const Computers = ({ isMobile }) => {
 				castShadow
 				shadow-mapSize={1024}
 			/>
-			<primitive
+			{/* <primitive
 				object={comp.scene}
 				scale={isMobile ? 0.65 : 0.75}
 				position={[0, -4.5, -1.5]}
 				rotation={[-0.0, -0.2, -0.05]}
-			/>
-			{/* <primitive
-				object={robot.scene}
-				scale={0.01}
-				position={[2.5, -6, 0]}
-				rotation={[0, 1.3, -0.0]}
 			/> */}
+			<primitive
+				object={astro.scene}
+				scale={isMobile ? 1.2 : 1.9}
+				position={[-1.5, -5, 0]}
+				rotation={[0, 1.3, -0.0]}
+			/>
 		</mesh>
 	);
 };
@@ -61,6 +59,7 @@ const ComputersCanvas = () => {
 					enableZoom={false}
 					maxPolarAngle={Math.PI / 2}
 					minPolarAngle={Math.PI / 2}
+					autoRotateSpeed={4}
 				/>
 				<Computers isMobile={isMobile} />
 			</Suspense>
