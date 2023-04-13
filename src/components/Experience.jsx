@@ -57,8 +57,8 @@ const Experience = () => {
 	return (
 		<>
 			<motion.div variants={textVariant()}>
-				<p className={styles.sectionSubText}>Projects So Far</p>
-				<h2 className={styles.sectionHeadText}>Projects.</h2>
+				<p className={styles.sectionSubText}>What Have I Done So Far</p>
+				<h2 className={styles.sectionHeadText}>Work Experience.</h2>
 				<div className="mt-20 flex flex-col">
 					<VerticalTimeline>
 						{experiences.map((exp, index) => (
@@ -71,4 +71,4 @@ const Experience = () => {
 	);
 };
 
-export default SectionWrapper(Experience, "Projects");
+export default SectionWrapper(Experience, "Work");
