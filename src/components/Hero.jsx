@@ -17,8 +17,8 @@ const Hero = () => {
 					<div className="w-1 sm:h-80 h-40 peach-gradient" />
 				</div>
 				<div>
-					<h1 className={styles.heroHeadText}>
-						Hi, I'm
+					<h1 className={styles.heroHeadText + " flex flex-wrap"}>
+						Hi, I'm &nbsp;
 						<span className="text-[#FF6363] flex flex-wrap"> Iqman Singh </span>
 					</h1>
 					<p
