@@ -233,7 +233,7 @@ const projects = [
 	{
 		name: "Spaceship Titanic Dataset",
 		description:
-			"The Spaceship Titanic Machine Learning Problem is the evolution of Titanic ML Problem. The objective is to use machine learning to create a model that predicts which which passengers were transported by the collision.",
+			"The Spaceship Titanic Machine Learning Problem is the evolution of Titanic ML Problem. The objective is to use machine learning to create a model that predicts which passengers were transported by the collision.",
 		tags: [
 			{
 				name: "Machine Learning",

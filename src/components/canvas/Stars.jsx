@@ -19,13 +19,11 @@ const Stars = (props) => {
 	}, []);
 
 	const ref = useRef();
-	const sphere = isMobile
-		? random.inSphere(new Float32Array(9000), { radius: 0.8 })
-		: random.inSphere(new Float32Array(30000), { radius: 0.8 });
+	const sphere = random.inSphere(new Float32Array(30000), { radius: 0.8 });
 
 	useFrame((state, delta) => {
 		ref.current.rotation.x -= delta / 10;
-		ref.current.rotation.y -= delta / 15;
+		ref.current.rotation.y -= delta / 10;
 	});
 	return (
 		<group rotation={[0, 0, Math.PI / 4]}>
@@ -33,9 +31,9 @@ const Stars = (props) => {
 				<PointMaterial
 					transparent
 					color="#FF6363"
-					size={isMobile ? 0.0005 : 0.001}
+					size={isMobile ? 0.0003 : 0.001}
 					sizeAttenuation={isMobile ? false : true}
-					depthWrite={false}
+					depthWrite={isMobile ? true : false}
 				/>
 			</Points>
 		</group>
