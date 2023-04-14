@@ -20,7 +20,7 @@ const Stars = (props) => {
 
 	const ref = useRef();
 	const sphere = isMobile
-		? random.inSphere(new Float32Array(3000), { radius: 0.8 })
+		? random.inSphere(new Float32Array(9000), { radius: 0.8 })
 		: random.inSphere(new Float32Array(30000), { radius: 0.8 });
 
 	useFrame((state, delta) => {
@@ -33,8 +33,8 @@ const Stars = (props) => {
 				<PointMaterial
 					transparent
 					color="#FF6363"
-					size={0.001}
-					sizeAttenuation={true}
+					size={isMobile ? 0.0005 : 0.001}
+					sizeAttenuation={isMobile ? false : true}
 					depthWrite={false}
 				/>
 			</Points>
