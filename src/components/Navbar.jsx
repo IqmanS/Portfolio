@@ -25,7 +25,7 @@ const Navbar = () => {
 						alt="logo"
 						className="w-9 h-9 rounded-full object-cover"
 					/>
-					<p className="text-white text-[21px] font-semibold cursor-pointer font-heading flex">
+					<p className="text-white text-[20px] font-semibold cursor-pointer font-heading flex">
 						Iqman Singh&nbsp;
 						<span className="md:block hidden font-heading ">Bhatia</span>
 					</p>

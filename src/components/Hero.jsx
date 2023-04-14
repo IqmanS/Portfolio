@@ -19,12 +19,11 @@ const Hero = () => {
 				<div>
 					<h1 className={styles.heroHeadText}>
 						Hi, I'm
-						<span className="text-[#FF6363] "> Iqman Singh </span>
+						<span className="text-[#FF6363] flex flex-wrap"> Iqman Singh </span>
 					</h1>
 					<p
 						className={
-							styles.heroSubText +
-							" mt-2 text-white-100 flex flex-wrap w-[500px]"
+							styles.heroSubText + " mt-2 text-white-100 flex flex-wrap"
 						}
 					>
 						App Dev, AI/ML Enthusiast and a Budding Software Engineer{" "}
