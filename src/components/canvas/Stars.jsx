@@ -1,11 +1,27 @@
-import { useState, useRef, Suspense } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 
 const Stars = (props) => {
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const mediaQuery = window.matchMedia("(max-width: 700px)");
+		setIsMobile(mediaQuery.matches);
+		const handleMediaQueryChange = (event) => {
+			setIsMobile(event.matches);
+		};
+		mediaQuery.addEventListener("change", handleMediaQueryChange);
+		return () => {
+			mediaQuery.removeEventListener("change", handleMediaQueryChange);
+		};
+	}, []);
+
 	const ref = useRef();
-	const sphere = random.inSphere(new Float32Array(30000), { radius: 0.8 });
+	const sphere = isMobile
+		? random.inSphere(new Float32Array(3000), { radius: 0.8 })
+		: random.inSphere(new Float32Array(30000), { radius: 0.8 });
 
 	useFrame((state, delta) => {
 		ref.current.rotation.x -= delta / 10;

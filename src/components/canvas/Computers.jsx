@@ -2,7 +2,7 @@ import { Suspense, useEffect, useState } from "react";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
+import { SectionWrapper } from "../../hoc";
 import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
 	const astro = useGLTF("./astronaut/scene.gltf");
@@ -26,8 +26,8 @@ const Computers = ({ isMobile }) => {
 			/> */}
 			<primitive
 				object={astro.scene}
-				scale={isMobile ? 1.2 : 1.9}
-				position={[-1.5, -5, 0]}
+				scale={isMobile ? 1 : 1.9}
+				position={isMobile ? [-1.5, -2.5, 0] : [-1.5, -5, 0]}
 				rotation={[0, 1.3, -0.0]}
 			/>
 		</mesh>
@@ -35,15 +35,18 @@ const Computers = ({ isMobile }) => {
 };
 
 const ComputersCanvas = () => {
-	const [isMobile, setMobile] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
+
 	useEffect(() => {
-		const mediaQuery = window.matchMedia("(max-width: 500px)");
-		setMobile(mediaQuery.matches);
+		const mediaQuery = window.matchMedia("(max-width: 700px)");
+		setIsMobile(mediaQuery.matches);
 		const handleMediaQueryChange = (event) => {
-			setMobile(event.matches);
+			setIsMobile(event.matches);
 		};
 		mediaQuery.addEventListener("change", handleMediaQueryChange);
-		mediaQuery.removeEventListener("change", handleMediaQueryChange);
+		return () => {
+			mediaQuery.removeEventListener("change", handleMediaQueryChange);
+		};
 	}, []);
 	return (
 		<Canvas
