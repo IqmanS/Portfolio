@@ -128,12 +128,12 @@ const technologies = [
 
 const experiences = [
 	{
-		title: "CBSE Non - Medical 10+2",
-		company_name: "GHPS Vasant Vihar",
+		title: "CBSE Non - Medical (10+2)",
+		company_name: "GHPS, Vasant Vihar, New Delhi",
 		icon: "https://www.schoolmykids.com/smk-media/2018/10/Guru-Harkrishan-Public-School-Vasant-Vihar-Delhi.png",
 		iconBg: "#383E56",
 		date: "March 2008 - April 2021",
-		points: ["Percentage: 94%"],
+		points: ["Percentage: 96%"],
 		// points: [
 		// 	"Developing and maintaining web applications using React.js and other related technologies.",
 		// 	"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -143,7 +143,7 @@ const experiences = [
 	},
 	{
 		title: "B.E. Computer Engineering",
-		company_name: "Thapar Institute of Engineering & Technology",
+		company_name: "Thapar Institute of Engineering & Technology, Patiala",
 		icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyFh1jLt9uOwEWlVoGF2ZesD1CqBVwPLLT8FeDfGU&s",
 		iconBg: "#E6DEDD",
 		date: "August 2021 - Present",
