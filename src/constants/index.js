@@ -128,12 +128,12 @@ const technologies = [
 
 const experiences = [
 	{
-		title: "CBSE Non - Medical (10+2)",
-		company_name: "GHPS, Vasant Vihar, New Delhi",
-		icon: "https://www.schoolmykids.com/smk-media/2018/10/Guru-Harkrishan-Public-School-Vasant-Vihar-Delhi.png",
-		iconBg: "#383E56",
-		date: "March 2008 - April 2021",
-		points: ["Percentage: 96%"],
+		title: "B.E. Computer Engineering",
+		company_name: "Thapar Institute of Engineering & Technology, Patiala",
+		icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyFh1jLt9uOwEWlVoGF2ZesD1CqBVwPLLT8FeDfGU&s",
+		iconBg: "#E6DEDD",
+		date: "August 2021 - Present",
+		points: ["Present CGPA: 9.22/10"],
 		// points: [
 		// 	"Developing and maintaining web applications using React.js and other related technologies.",
 		// 	"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -142,12 +142,12 @@ const experiences = [
 		// ],
 	},
 	{
-		title: "B.E. Computer Engineering",
-		company_name: "Thapar Institute of Engineering & Technology, Patiala",
-		icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyFh1jLt9uOwEWlVoGF2ZesD1CqBVwPLLT8FeDfGU&s",
-		iconBg: "#E6DEDD",
-		date: "August 2021 - Present",
-		points: ["CGPA: 9.22/10"],
+		title: "CBSE Non - Medical (10+2)",
+		company_name: "GHPS, Vasant Vihar, New Delhi",
+		icon: "https://www.schoolmykids.com/smk-media/2018/10/Guru-Harkrishan-Public-School-Vasant-Vihar-Delhi.png",
+		iconBg: "#383E56",
+		date: "March 2008 - April 2021",
+		points: ["Percentage: 96%"],
 		// points: [
 		// 	"Developing and maintaining web applications using React.js and other related technologies.",
 		// 	"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -185,6 +185,28 @@ const testimonials = [
 ];
 
 const projects = [
+	{
+		name: "Beaver - Chess Engine",
+		description:
+			"Beaver is a Chess Engine made using Python. It employs advanced searching algorithms like Min-Max, Nega-Max and Alpha-Beta Pruning Algorithms along with Piece-Positional Score Table to provide an efficient and accurate gameplay. ",
+		tags: [
+			{
+				name: "Artificial Intelligence",
+				color: "green-text-gradient",
+			},
+			{
+				name: "PyGame",
+				color: "peach-text-gradient",
+			},
+		],
+		image:
+			"https://raw.githubusercontent.com/IqmanS/beaver-chess-engine/master/images/beaver-chess-logo%20(2).png",
+		source:
+			"https://static-00.iconduck.com/assets.00/itch-io-icon-512x512-wwio9bi8.png",
+		link2: false,
+		source_code_link_2: "https://iqman-s.itch.io/battleship-ai",
+		source_code_link: "https://github.com/IqmanS/beaver-chess-engine",
+	},
 	{
 		name: "Lemur - Battleship Game AI",
 		description:
