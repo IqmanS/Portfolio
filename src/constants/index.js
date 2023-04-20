@@ -63,7 +63,7 @@ const services = [
 	},
 	{
 		title: "Medium",
-		link: "https://medium.com/@ibhatia_be21",
+		link: "https://medium.com/@iqmans",
 	},
 	{
 		title: "Gmail",
