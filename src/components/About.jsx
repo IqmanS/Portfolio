@@ -43,7 +43,7 @@ const About = () => {
 					className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 					variants={fadeIn("", "", 0.1, 1)}
 				>
-					Core Member at Google Developer Student Club TIET.
+					Kaggle Notebooks Expert & Core Member at Google DSC TIET.
 					<br /> Currently exploring fields of Artificial intelligence and
 					Machine Learning. I have worked on several projects, including Meali -
 					a Meal Catalog App, Lemur - BattleShip Board Game AI and currently

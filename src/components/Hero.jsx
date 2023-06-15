@@ -26,7 +26,7 @@ const Hero = () => {
 							styles.heroSubText + " mt-2 text-white-100 flex flex-wrap"
 						}
 					>
-						App Dev, AI/ML Enthusiast and a Budding Software Engineer{" "}
+						Kaggle Expert, App Developer & a Budding Software Engineer{" "}
 					</p>
 				</div>
 			</div>
