@@ -80,7 +80,10 @@ const Contact = () => {
 				<h3 className={styles.sectionHeadText}>
 					Contact<span className="text-quat">.</span>
 				</h3>
-
+				<p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
+					Can contact me at:{" "}
+					<span className="underline">ibhatia_be21@thapar.edu</span>
+				</p>
 				<form
 					ref={formRef}
 					onSubmit={handleSubmit}
