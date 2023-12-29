@@ -230,10 +230,14 @@ const projects = [
 		source_code_link: "https://github.com/IqmanS/lemur-battleship-ai",
 	},
 	{
-		name: "Titanic Dataset",
+		name: "Enefit - Interactive Analysis Dashboard",
 		description:
-			"This is the legendary Titanic Machine Learning problem. The objective is to use machine learning to create a model that predicts which passengers survived the Titanic shipwreck.",
+			"This is an Interactive Dashboard for comprehensive time-series analysis using Plotly. The kernel was recognized with a Gold Medal on the Kaggle, with 120+ upvotes",
 		tags: [
+			{
+				name: "Data Analysis",
+				color: "grey-text-gradient",
+			},
 			{
 				name: "Machine Learning",
 				color: "pink-text-gradient",
@@ -244,7 +248,7 @@ const projects = [
 			},
 		],
 		image:
-			"https://raw.githubusercontent.com/IqmanS/ai_ml/main/titanic_dataset/titanic.jpg",
+			"https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		source_code_link:
 			"https://github.com/IqmanS/ai_ml/tree/main/titanic_dataset",
 		link2: true,
