@@ -133,7 +133,7 @@ const experiences = [
 		icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyFh1jLt9uOwEWlVoGF2ZesD1CqBVwPLLT8FeDfGU&s",
 		iconBg: "#E6DEDD",
 		date: "August 2021 - Present",
-		points: ["Present CGPA: 9.22/10"],
+		points: ["Present CGPA: 9.4/10"],
 		// points: [
 		// 	"Developing and maintaining web applications using React.js and other related technologies.",
 		// 	"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",

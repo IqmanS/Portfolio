@@ -43,12 +43,24 @@ const About = () => {
 					className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 					variants={fadeIn("", "", 0.1, 1)}
 				>
-					Kaggle Notebooks Expert & Core Member at Google DSC TIET.
-					<br /> Currently exploring fields of Artificial intelligence and
-					Machine Learning. I have worked on several projects, including Meali -
-					a Meal Catalog App, Lemur - BattleShip Board Game AI and currently
-					working on Beaver - a Chess Engine designed to provide a challenging
-					and immersive experience for players of all levels.
+					<ul className="list-disc">
+						<li>
+							Research Intern at Samsung R&D Institute India - Bangalore,
+							working on the domain of Applied Machine Learning on 5G Mobile
+							Networking.
+						</li>
+						<li>
+							Kaggle Notebooks Master (Ranked 148 globally) & Datasets Expert
+							(Ranked 600 globally).
+						</li>
+						<li>
+							Currently exploring fields of Artificial intelligence and Machine
+							Learning. I have worked on several projects, including Meali - a
+							Meal Catalog App, Lemur - BattleShip Board Game AI and currently
+							working on Beaver - a Chess Engine designed to provide a
+							challenging and immersive experience for players of all levels.
+						</li>
+					</ul>
 				</motion.p>
 				<p className={styles.sectionSubText + " mt-32"}>My Relevant Profiles</p>
 				<h2 className={styles.sectionHeadText}>

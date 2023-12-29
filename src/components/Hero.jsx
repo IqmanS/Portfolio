@@ -21,13 +21,16 @@ const Hero = () => {
 						Hi, I'm &nbsp;
 						<span className="text-[#FF6363] flex flex-wrap"> Iqman Singh </span>
 					</h1>
-					<p
+					<div
 						className={
 							styles.heroSubText + " mt-2 text-white-100 flex flex-wrap"
 						}
 					>
-						Kaggle Expert, App Developer & a Budding Software Engineer{" "}
-					</p>
+						<p>
+							Research Intern @Samsung R&D India | Ex-Project Intern @TIET |
+						</p>
+						<p> Kaggle Notebooks Master & Datasets Expert </p>
+					</div>
 				</div>
 			</div>
 			<ComputersCanvas />
