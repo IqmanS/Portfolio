@@ -133,7 +133,7 @@ const experiences = [
 		icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyFh1jLt9uOwEWlVoGF2ZesD1CqBVwPLLT8FeDfGU&s",
 		iconBg: "#E6DEDD",
 		date: "August 2021 - Present",
-		points: ["Present CGPA: 9.4/10"],
+		points: ["Present CGPA: 9.40/10"],
 		// points: [
 		// 	"Developing and maintaining web applications using React.js and other related technologies.",
 		// 	"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -186,6 +186,33 @@ const testimonials = [
 
 const projects = [
 	{
+		name: "Enefit - Interactive Analysis Dashboard",
+		description:
+			"This is an Interactive Dashboard for comprehensive time-series analysis using Plotly. The kernel was recognized with a Gold Medal on the Kaggle, with 120+ upvotes",
+		tags: [
+			{
+				name: "Data Analysis",
+				color: "grey-text-gradient",
+			},
+			{
+				name: "Machine Learning",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "Kaggle",
+				color: "blue-text-gradient",
+			},
+		],
+		image:
+			"https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		source_code_link: "https://github.com/IqmanS/Machine-Learning-Notebooks",
+		link2: true,
+		source:
+			"https://storage.scolary.com/storage/file/public/71b68248-ba0a-4b26-b15f-0c77cdf341cd.svg",
+		source_code_link_2:
+			"https://www.kaggle.com/code/iqmansingh/enefit-interactive-time-series-analysis",
+	},
+	{
 		name: "Beaver - Chess Engine",
 		description:
 			"Beaver is a Chess Engine made using Python. It employs advanced searching algorithms like Min-Max, Nega-Max and Alpha-Beta Pruning Algorithms along with Piece-Positional Score Table to provide an efficient and accurate gameplay. ",
@@ -229,33 +256,7 @@ const projects = [
 		source_code_link_2: "https://iqman-s.itch.io/battleship-ai",
 		source_code_link: "https://github.com/IqmanS/lemur-battleship-ai",
 	},
-	{
-		name: "Enefit - Interactive Analysis Dashboard",
-		description:
-			"This is an Interactive Dashboard for comprehensive time-series analysis using Plotly. The kernel was recognized with a Gold Medal on the Kaggle, with 120+ upvotes",
-		tags: [
-			{
-				name: "Data Analysis",
-				color: "grey-text-gradient",
-			},
-			{
-				name: "Machine Learning",
-				color: "pink-text-gradient",
-			},
-			{
-				name: "Kaggle",
-				color: "blue-text-gradient",
-			},
-		],
-		image:
-			"https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		source_code_link:
-			"https://github.com/IqmanS/ai_ml/tree/main/titanic_dataset",
-		link2: true,
-		source:
-			"https://storage.scolary.com/storage/file/public/71b68248-ba0a-4b26-b15f-0c77cdf341cd.svg",
-		source_code_link_2: "https://www.kaggle.com/code/iqmansingh/titanic",
-	},
+
 	{
 		name: "Spaceship Titanic Dataset",
 		description:
