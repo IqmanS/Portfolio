@@ -26,9 +26,8 @@ const Hero = () => {
 							styles.heroSubText + " mt-2 text-white-100 flex flex-wrap"
 						}
 					>
-						<p>
-							Research Intern @Samsung R&D India | Ex-Project Intern @TIET |
-						</p>
+						<p> Upcoming Data Analyst Intern @PayPal </p>
+						<p> Ex-Research Intern @Samsung R&D | Ex-Project Intern @TIET </p>
 						<p> Kaggle Notebooks Master & Datasets Expert </p>
 					</div>
 				</div>

@@ -45,20 +45,24 @@ const About = () => {
 				>
 					<ul className="list-disc">
 						<li>
-							Research Intern at Samsung R&D Institute India - Bangalore,
-							working on the domain of Applied Machine Learning on 5G Mobile
-							Networking.
+							Upcoming Data Analyst Intern at PayPal for the Summer of 2024.
+						</li>
+
+						<li>
+							Ex-Research Intern at Samsung R&D Institute India - Bangalore,
+							worked on the domain of GANs & Applied Machine Learning on 5G
+							Mobile Networking.
 						</li>
 						<li>
-							Kaggle Notebooks Master (Ranked 148 globally) & Datasets Expert
+							Kaggle Notebooks Master (Ranked 120 globally) & Datasets Expert
 							(Ranked 600 globally).
 						</li>
 						<li>
 							Currently exploring fields of Artificial intelligence and Machine
 							Learning. I have worked on several projects, including Meali - a
-							Meal Catalog App, Lemur - BattleShip Board Game AI and currently
-							working on Beaver - a Chess Engine designed to provide a
-							challenging and immersive experience for players of all levels.
+							Meal Catalog App, Lemur - BattleShip Board Game AI and Beaver - a
+							Chess Engine designed to provide a challenging and immersive
+							experience for players of all levels.
 						</li>
 					</ul>
 				</motion.p>
