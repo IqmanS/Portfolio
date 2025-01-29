@@ -45,8 +45,9 @@ const About = () => {
 				>
 					<ul className="list-disc">
 						<li>
-							Upcoming Data Analyst Intern at PayPal for the Summer of 2024.
+							Software Engineering Intern at BlackRock with the Aladdin team.
 						</li>
+						<li>Ex-Data Analyst Intern at PayPal during the Summer of 2024.</li>
 
 						<li>
 							Ex-Research Intern at Samsung R&D Institute India - Bangalore,
